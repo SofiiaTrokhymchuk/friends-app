@@ -1,8 +1,6 @@
 import { renderAllUsers } from "./renderUsers.js";
 import { usersList} from "./UsersList.js";
 
-const inputForm = document.getElementById('inputForm');
-
 function searchByName(users, enteredName){
     return users.filter(user => user.getFullName().toLowerCase().includes(enteredName.toLowerCase()));
 }
@@ -37,7 +35,8 @@ function sortUsers(users, sortingParameter){
 }
 
 export function inputHandler(){
-    inputForm.addEventListener('input', () => {
+    const inputForm = document.getElementById('inputForm');
+    inputForm.addEventListener('input', (event) => {
         let users = usersList;
         let selectedGender = inputForm.genderFilter.value;
         let selectedSorting = inputForm.sortingMethod.value;
@@ -46,6 +45,9 @@ export function inputHandler(){
         users = filterByGender(users, inputForm.genderFilter.value);
         users = sortUsers(users, inputForm.sortingMethod.value);
         renderAllUsers(users);
+    })
+    inputForm.addEventListener('submit', (event) => {
+        event.preventDefault();
     })
 }
 
