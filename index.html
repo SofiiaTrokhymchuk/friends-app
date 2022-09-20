@@ -11,17 +11,25 @@
 <body>
     <div class="content-wrapper">
         <header class="header">
+            <div class="hamburger-menu">
+                <div class="hamburger-menu__line"></div>
+                <div class="hamburger-menu__line"></div>
+                <div class="hamburger-menu__line"></div>
+            </div>
             <div class="header-logo">
                 <i class="fa-solid fa-hashtag header-icon"></i>
-                <h1 class="header-title">FriendsApp</h1>
+                <h1 class="header-title"><span>F</span>riends<span>A</span>pp</h1>
             </div>
-            <a href="https://github.com/SofiiaTrokhymchuk/friends-app" target="_blank" class="header-link"><i class="fa-brands fa-github header-icon"></i></a>
+            <a href="https://github.com/SofiiaTrokhymchuk/friends-app" target="_blank" class="header-link">
+                <i class="fa-brands fa-github header-icon"></i>
+            </a>
         </header>
         <main class="main">
             <section class="input-container" id="inputContainer">
                 <form class="input-form" id="inputForm">
                     <div class="search-container">
-                        <input type="text" autocomplete="off" name="enteredName" id="enteredName" placeholder="Search for friends..." class="search_container__input">
+                        <input type="text" autocomplete="off" name="enteredName" id="enteredName" 
+                        placeholder="Search for friends..." class="search_container__input">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         <i class="fa-solid fa-circle-xmark close-icon" id="closeIcon"></i>
                     </div>

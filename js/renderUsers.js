@@ -1,7 +1,7 @@
 function renderUser(user){
-    const femaleIcon = '<i class="fa-solid fa-venus"></i>';
-    const maleIcon = '<i class="fa-solid fa-mars"></i>';
-    const phoneIcon = '<i class="fa-solid fa-phone"></i>';
+    const femaleIcon = '<i class="fa-solid fa-venus user-info-icon"></i>';
+    const maleIcon = '<i class="fa-solid fa-mars user-info-icon"></i>';
+    const phoneIcon = '<i class="fa-solid fa-phone user-info-icon"></i>';
     return `
         <div class="user-container">
             <img src="${user.getImage()}" alt="User image">
