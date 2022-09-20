@@ -11,15 +11,15 @@
 <body>
     <div class="content-wrapper">
         <header class="header">
-            <div class="hamburger-menu">
+            <button class="hamburger-menu">
                 <div class="hamburger-menu__line"></div>
                 <div class="hamburger-menu__line"></div>
                 <div class="hamburger-menu__line"></div>
-            </div>
-            <div class="header-logo">
+            </button>
+            <a href="index.html" class="header-logo header-link">
                 <i class="fa-solid fa-hashtag header-icon"></i>
                 <h1 class="header-title"><span>F</span>riends<span>A</span>pp</h1>
-            </div>
+            </a>
             <a href="https://github.com/SofiiaTrokhymchuk/friends-app" target="_blank" class="header-link">
                 <i class="fa-brands fa-github header-icon"></i>
             </a>
@@ -27,13 +27,13 @@
         <main class="main">
             <section class="input-container" id="inputContainer">
                 <form class="input-form" id="inputForm">
-                    <div class="search-container">
+                    <section class="search-container">
                         <input type="text" autocomplete="off" name="enteredName" id="enteredName" 
                         placeholder="Search for friends..." class="search_container__input">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         <i class="fa-solid fa-circle-xmark close-icon" id="closeIcon"></i>
-                    </div>
-                    <div class="filters-container">
+                    </section>
+                    <section class="filters-container">
                         <h3 class="input-category-title">Filters</h3>
                         <h4 class="input-method-title">Gender Filter</h3>
                         <input type="radio" name="genderFilter" value="allGenders" id="allGenders" class="radio-button-input" checked>
@@ -44,8 +44,8 @@
 
                         <input type="radio" name="genderFilter" value="female" id="female" class="radio-button-input">
                         <label for="female" class="input-label"><i class="fa-solid fa-venus"></i> F </label>
-                    </div>
-                    <div class="sorters-container">
+                    </section>
+                    <section class="sorters-container">
                         <h3 class="input-category-title">Sorters</h3>
                         <input type="radio" name="sortingMethod" value="unsortedUsers" id="unsortedUsers" class="radio-button-input" checked>
                         <label for="unsortedUsers" class="input-label">Unsorted</label>
@@ -63,7 +63,7 @@
 
                         <input type="radio" name="sortingMethod" value="ageDescending" id="ageDescending" class="radio-button-input">
                         <label for="ageDescending" class="input-label">(&infin;-0)</label>
-                    </div>
+                    </section>
                 </form>
             </section>
             <section class="users-container" id="usersContainer">

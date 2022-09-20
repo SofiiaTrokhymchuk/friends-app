@@ -1,9 +1,10 @@
 export class User{
-    constructor(firstName, lastName, gender, age, phone, image){
+    constructor(firstName, lastName, gender, age, country, phone, image){
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         this.age = age;
+        this.country = country;
         this.phone = phone;
         this.image = image;
     }
@@ -26,6 +27,10 @@ export class User{
 
     getAge(){
         return this.age;
+    }
+
+    getCountry(){
+        return this.country;
     }
 
     getPhone(){

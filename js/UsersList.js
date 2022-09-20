@@ -25,6 +25,7 @@ function createUserObject(user){
         user.name.last, 
         user.gender, 
         user.dob.age,
+        user.location.country,
         user.phone,
         user.picture.large);
 }

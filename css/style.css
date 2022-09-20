@@ -50,6 +50,10 @@ body{
 
 .hamburger-menu{
     display: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
     flex-direction: column;
     justify-content: space-between;
     width: 2.2rem;
@@ -59,8 +63,9 @@ body{
 
 .hamburger-menu .hamburger-menu__line{
     content: '';
+    width: 100%;
     height: 0.4rem;
-    background: var(--main-dark-color);
+    background-color: var(--main-dark-color);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.4s;
@@ -324,6 +329,18 @@ body{
         border-radius: 0 0 10px 10px;
     }
 
+    .search_container__input{
+        height: 2.4rem;
+        border-radius: 1.2rem;
+        padding-left: 3rem;
+        font-size: 1.3rem;
+    }
+
+    .search-icon, .close-icon{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
     .hamburger-menu.active .hamburger-menu__line:nth-child(1){
         transform: rotate(45deg) translate(11px, 8px);
     }
@@ -422,5 +439,14 @@ body{
 
     .secondary-user-info{
         font-size: 1.4rem;
+    }
+
+    .footer{
+        height: 4rem;
+    }
+    
+    .footer span{
+        font-size: 1.3rem;
+        line-height: 4rem;
     }
 }
