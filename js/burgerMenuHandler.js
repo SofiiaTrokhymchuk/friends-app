@@ -1,10 +1,11 @@
 export function hamburgerMenuClickHandler(){
+    const mainContainer = document.querySelector('.main');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const inputContainer =  document.getElementById('inputContainer');
     hamburgerMenu.addEventListener('click', () => {
         toggleHamburgerMenuClasses();
     })
-    document.addEventListener('click', (event) => {
+    mainContainer.addEventListener('click', (event) => {
         if(!event.target.closest('.input-container') && !event.target.closest('.hamburger-menu')){
             toggleHamburgerMenuClasses();
         }
