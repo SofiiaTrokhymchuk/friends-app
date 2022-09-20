@@ -71,10 +71,6 @@ body{
     transition: transform 0.4s;
 }
 
-.hamburger-menu:hover .hamburger-menu__line{
-   background: var(--accent-color);
-}
-
 .header-logo{
     display: flex;
     align-items: baseline;
