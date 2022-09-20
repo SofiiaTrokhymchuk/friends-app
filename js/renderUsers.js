@@ -4,13 +4,15 @@ function renderUser(user){
     const phoneIcon = '<i class="fa-solid fa-phone user-info-icon"></i>';
     return `
         <div class="user-container">
-            <img src="${user.getImage()}" alt="User image">
+            <img class="user-image" src="${user.getImage()}" alt="User image">
             <div class="user-info">
-                <span class="user-name">${user.getFullName()}</span>
-                <span class="user-age">${user.getAge()}</span>
-                <span class="secondary-user-info">
+                <span class="user-info__item user-name">${user.getFullName()}</span>
+                <span class="user-info__item user-age">${user.getAge()}</span>
+                <span class="user-info__item secondary-user-info">
                 ${user.getGender() === 'female' ? femaleIcon : maleIcon} : ${user.getGender()}</span>
-                <span class="secondary-user-info">${phoneIcon} : ${user.getPhone()}</span>
+                <span class="user-info__item secondary-user-info">
+                    <a href="tel:${user.getPhone()}">${phoneIcon} : ${user.getPhone()}</a>
+                </span>
             </div>
         </div>
     `;
