@@ -36,7 +36,7 @@ function sortUsers(users, sortingParameter){
 
 export function inputHandler(){
     const inputForm = document.getElementById('inputForm');
-    inputForm.addEventListener('input', (event) => {
+    inputForm.addEventListener('input', () => {
         let users = usersList;
         let selectedGender = inputForm.genderFilter.value;
         let selectedSorting = inputForm.sortingMethod.value;
